@@ -23,7 +23,7 @@ export default class BaiTapThuKinh extends Component {
         return dataGlasses.map((glass, index) => {
             return <img onClick={() => {
                 this.changeGlass(glass)
-            }} className='ml-2 p-2 border border-width-1' style={{ width: '130px', cursor: 'pointer' }} key={index} src={glass.url} />
+            }} className='ml-2 p-2 border border-secondary rounded-1 glasses ' style={{ width: '130px', cursor: 'pointer' }} key={index} src={glass.url} />
         })
     }
 
@@ -72,14 +72,14 @@ export default class BaiTapThuKinh extends Component {
         }
         return (
 
-            <div style={{ backgroundImage: 'url(./glassesImage/bg2.png)', backgroundSize: '1500px', minHeight: '2000px' }}>
+            <div className='background' style={{ backgroundImage: 'url(./glassesImage/bg2.png)', backgroundSize: '1400px', minHeight: '500px' }}>
                 <style>
                     {animationKeyFrames}
                 </style>
 
 
 
-                <div style={{ backgroundColor: 'rgba(0,0,0,.5)', minHeight: '2000px' }}>
+                <div style={{ backgroundColor: 'rgba(0,0,0,.5)', minHeight: '1000px' }}>
                     <h3 className='text-center text-light'>TRY GLASSESE ONLINE</h3>
                     <div className='container content'>
                         <div className='row mt-5 text-center'>
@@ -105,7 +105,7 @@ export default class BaiTapThuKinh extends Component {
                         </div>
                     </div>
                     {/* list glasses */}
-                    <div className='bg-dark container  text-center mt-5 d-flex justify-content-center p-5'>
+                    <div className='bg-transparent container  text-center mt-5 d-flex justify-content-center p-5'>
                         {this.renderGlassesList()};
                     </div>
                 </div>

@@ -49,6 +49,8 @@ export default class BaiTapGioHang extends Component {
         }
 
     }
+
+    // changeQuantity = (idClick, num) => 
   render() {
     return (
     
